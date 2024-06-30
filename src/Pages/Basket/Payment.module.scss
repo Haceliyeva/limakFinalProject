@@ -1,0 +1,78 @@
+/* Payment.module.scss */
+
+.payment-form {
+    background-color: #FDF5F4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    width: 28rem; /* Formu biraz daha geniş yaptım */
+    margin: 0 auto; /* Formun merkeze hizalanması */
+    text-align: center; /* Form içeriğinin ortalanması */
+}
+
+.payment-form h2 {
+    font-size: 1.75rem; /* Başlık font büyüklüğü artırıldı */
+    font-weight: bold;
+    color: #F05835;
+    margin-bottom: 1.5rem; /* Başlık altındaki boşluk artırıldı */
+}
+
+.payment-form p {
+    font-size: 1.25rem; /* Fiyat metni font büyüklüğü artırıldı */
+    color: #4a5568;
+    margin-bottom: 1.5rem; /* Fiyat altındaki boşluk artırıldı */
+}
+
+.payment-form label {
+    font-size: 1rem; /* Giriş etiketleri font büyüklüğü artırıldı */
+    color: #4a5568;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block; /* Etiketlerin blok düzeninde görüntülenmesi */
+    text-align: left; /* Etiket metinlerinin sol hizalanması */
+}
+
+.payment-form input[type='text'],
+.payment-form input[type='password'] {
+    width: calc(100% - 3rem); /* Giriş alanlarının genişliği ayarlandı */
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+}
+
+.payment-form input[type='text']:focus,
+.payment-form input[type='password']:focus {
+    outline: none;
+    border-color: #FECACA;
+    box-shadow: 0 0 0 3px rgba(240, 88, 53, 0.2);
+}
+
+.payment-form input[type='text']::placeholder,
+.payment-form input[type='password']::placeholder {
+    color: #CBD5E0;
+}
+
+.payment-form button[type='submit'] {
+    background-color: #F05835;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-form button[type='submit']:hover {
+    background-color: #D9482E;
+}
+
+.payment-form .toastify {
+    .Toastify__toast {
+        font-size: 1rem;
+    }
+}

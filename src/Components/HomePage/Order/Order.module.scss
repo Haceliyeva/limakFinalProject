@@ -1,0 +1,198 @@
+.order {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #E5E5E5;
+
+    .container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border: 1px solid #F15834;
+        background-color: #F15834;
+        padding: 25px;
+        border-radius: 13px;
+        position: relative;
+
+        p {
+            font-size: 25px;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .inputButton {
+            position: relative;
+            display: flex;
+
+            input {
+                width: 850px;
+                position: relative;
+                padding: 30px;
+                font-size: 15px;
+                border-radius: 15px;
+                border: 0;
+                outline: none;
+            }
+
+            li {
+                position: absolute;
+                list-style: none;
+                left: 10px;
+                bottom: 26px;
+                font-size: 20px;
+                color: gray;
+            }
+
+            button {
+                position: absolute;
+                right: 15px;
+                bottom: 10px;
+                padding: 20px;
+                display: flex;
+                width: 180px;
+                border-radius: 10px;
+                border: 0;
+                background-color: #F15834;
+                justify-content: center;
+                color: #fff;
+                font-weight: 600;
+                background-color: #F15834;
+                cursor: pointer;
+                display: inline-block;
+                overflow: hidden;
+                transition: color 0.3s, background-color 0.6s;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0);
+                    transition: width 0.7s;
+                    z-index: 0;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+
+                &:hover {
+                    color: #ffffff;
+                    background-color: #000000;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:1250px) {
+    .order {
+        .container {
+            .inputButton {
+                li {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:1245px) {
+    .order {
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .inputButton {
+                input {
+                    position: relative;
+                    padding: 70px;
+                    width: 900px;
+                }
+
+                button {
+                    position: absolute;
+                    justify-content: center;
+                    left: 80px;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:790px) {
+    .order {
+        .container {
+            .inputButton {
+                button {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:558px) {
+    .order {
+        .container {
+            .inputButton {
+                button {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:447px) {
+    .order {
+        .container {
+            .inputButton {
+                input {
+                    width: 150%;
+                }
+
+                button {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:380px) {
+    .order {
+        .container {
+            .inputButton {
+
+                button {
+                    width: 100px;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width:290px) and (max-width:335px) {
+    .order {
+        .container {
+            .inputButton {
+
+                button {
+                    width: 80px;
+                }
+
+            }
+        }
+    }
+}

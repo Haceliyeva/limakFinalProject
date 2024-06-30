@@ -1,0 +1,221 @@
+// .container {
+//     max-width: 700px; 
+//     margin: 0 auto; 
+//     padding: 0 2cqmin; 
+//     display: flex; 
+//     flex-direction: column; 
+//     gap: 40px; 
+// }
+// h1{
+//     font-size: 30px;
+//     padding: 30px 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+// .product-grid {
+//     display: grid; 
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+//     grid-gap: 20px; 
+// }
+
+// .product-card {
+//     background-color: #ffffff; 
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+//     border-radius: 8px; 
+//     padding: 1.5rem; 
+//     transition: all 0.3s ease; 
+
+//     &:hover { 
+//         transform: translateY(-5px); 
+//     }
+
+//     img {
+//         width: 100%; 
+//         height: 500px; 
+//         object-fit: cover; 
+//         border-radius: 6px; 
+//         margin-bottom: 1rem; 
+//     }
+
+//     h3 {
+//         font-size: 1.25rem; 
+//         font-weight: 600; 
+//         margin-bottom: 0.5rem;
+//     }
+
+//     p {
+//         color: #4a5568; 
+//         font-size: 1rem; 
+//         margin-bottom: 1rem; 
+//     }
+
+//     .button-primary {
+//         background-color: #F15834; 
+//         color: #ffffff; 
+//         font-weight: 600;
+//         padding: 0.75rem 1.5rem;
+//         border-radius: 9999px; 
+//         transition: background-color 0.3s ease; 
+//         border: #F15834;
+
+//         &:hover { 
+//             background-color: #F15834; 
+//         }
+//     }
+// }
+
+
+
+
+
+/* Aker.scss */
+
+// .container {
+//     max-width: 900px; /* Container genişliği artırıldı */
+//     margin: 0 auto; /* Container'ı merkeze hizalama */
+//     padding: 2rem; /* Container iç boşluğu artırıldı */
+//     display: flex;
+//     flex-direction: column;
+//     gap: 40px;
+//     background-color: #E5E5E5;
+//     padding: 30px 0;
+// }
+
+// h1 {
+//     font-size: 2.5rem; /* Başlık font büyüklüğü artırıldı */
+//     text-align: center; /* Başlık ortalandı */
+//     color: #F05835; /* Başlık rengi değiştirildi */
+//     margin-bottom: 2rem; /* Başlık altındaki boşluk artırıldı */
+// }
+
+// .grid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//     gap: 20px;
+// }
+
+// .product-card {
+//     background-color: #FFFFFF;
+//     padding: 20px;
+//     border-radius: 8px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//     transition: transform 0.2s ease-in-out;
+// }
+
+// .product-card:hover {
+//     transform: translateY(-5px);
+// }
+
+// .product-card img {
+//     width: 100%;
+//     height: 250px; /* Ürün resmi yüksekliği ayarlandı */
+//     object-fit: cover;
+//     border-radius: 6px;
+//     margin-bottom: 1rem;
+// }
+
+// .product-card h3 {
+//     font-size: 1.5rem; /* Ürün başlık font büyüklüğü artırıldı */
+//     font-weight: bold;
+//     margin-bottom: 0.5rem;
+// }
+
+// .product-card p {
+//     color: #4a5568;
+//     font-size: 1.25rem; /* Ürün açıklama font büyüklüğü artırıldı */
+//     margin-bottom: 1rem;
+// }
+
+// .button-primary {
+//     background-color: #F15834;
+//     color: #FFFFFF;
+//     font-weight: bold;
+//     padding: 0.75rem 1.5rem;
+//     border-radius: 9999px;
+//     transition: background-color 0.3s ease;
+//     border: none;
+//     cursor: pointer;
+// }
+
+// .button-primary:hover {
+//     background-color: #D9482E;
+// }
+
+
+/* Aker.scss */
+
+.container {
+    max-width: 1100px; /* Container genişliği artırıldı */
+    margin: 0 auto; /* Container'ı merkeze hizalama */
+    padding: 2rem; /* Container iç boşluğu artırıldı */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #F7F7F7; /* Açık gri arka plan rengi */
+    border-radius: 12px; /* Köşe yuvarlama */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+h1 {
+    font-size: 3rem; /* Başlık font büyüklüğü artırıldı */
+    text-align: center; /* Başlık ortalandı */
+    color: #F05835; /* Başlık rengi değiştirildi */
+    margin-bottom: 2rem; /* Başlık altındaki boşluk artırıldı */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Ürün kartları arasındaki boşluk azaltıldı */
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Daha belirgin gölge */
+    transition: transform 0.3s ease; /* Dönüşüm süresi uzatıldı */
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.02); /* Yatay kaydırma ve büyütme efekti */
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px; /* Resim köşe yuvarlama */
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Resim için hafif gölge */
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333; /* Başlık rengi koyulaştırıldı */
+}
+
+.product-card p {
+    color: #666; /* Açıklama rengi gri tonunda */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.button-primary {
+    background-color: #F15834;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 999px; /* Yuvarlatılmış köşeler */
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase; /* Metin büyüklüğü artırıldı */
+}
+
+.button-primary:hover {
+    background-color: #D9482E;
+}
